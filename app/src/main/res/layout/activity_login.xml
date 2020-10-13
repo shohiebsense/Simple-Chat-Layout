@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/text_silakan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="2"
+        android:minLines="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text_no_hp"
+        android:text="@string/text_silakan_masuk"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginBottom="96dp"
+        />
+
+    <TextView
+        android:id="@+id/text_no_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_silakan"
+        app:layout_constraintBottom_toTopOf="@+id/edit_handphone_no"
+        android:text="@string/text_nomor_hp"
+        android:layout_marginBottom="32dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_handphone_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_next"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="phone"
+        android:lines="1"
+        android:maxLines="1"
+        
+        app:layout_constraintTop_toBottomOf="@+id/text_no_hp"
+        />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_handphone_no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/text_selanjutnya"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

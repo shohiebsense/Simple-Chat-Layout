@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Soal2</string>
+    <string name="text_silakan_masuk">Silakan masuk dengan nomor HP kamu yang terdaftar</string>
+    <string name="text_nomor_hp">Nomor HP</string>
+    <string name="text_selanjutnya">Selanjutnya</string>
+    <string name="text_masukan_kode">Masukan 6 kode yang telah diterima via SMS ke nomor yang telah anda masukan</string>
+    <string name="text_salah_no_handphone">Salah no handphone?</string>
+    <string name="text_ubah_no_handphone">Ubah No Handphone</string>
+    <string name="text_konfirmasi">Konfirmasi</string>
+    <string name="text_no_rekam_medis">No Rekam Medis</string>
+    <string name="text_name">Nama</string>
+    <string name="text_tanggal_lahir">Tanggal Lahir</string>
+    <string name="text_alamat">Alamat</string>
+    <string name="text_email">Email</string>
+    <string name="text_simpan">Simpan</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

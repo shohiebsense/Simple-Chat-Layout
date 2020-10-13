@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/image_pp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_launcher_foreground"
+        android:background="@drawable/bg_shape_circle"/>
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="dr Nadia A. Wulansari, Sp PG, KHOM"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@+id/image_pp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text_spesialis"
+        />
+
+    <TextView
+        android:id="@+id/text_spesialis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Spesialis Penyakit Dalam"
+        app:layout_constraintBottom_toTopOf="@+id/text_date"
+        app:layout_constraintTop_toBottomOf="@+id/text_name"
+        app:layout_constraintLeft_toRightOf="@+id/image_pp"/>
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1 Januari 2020"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_spesialis"
+        app:layout_constraintLeft_toRightOf="@+id/image_pp"/>
+
+
+    <ImageView
+        android:id="@+id/image_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text_chat"
+        android:layout_marginRight="16dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:src="@drawable/ic_home_black_24dp"
+        />
+
+    <TextView
+        android:id="@+id/text_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Chat"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
